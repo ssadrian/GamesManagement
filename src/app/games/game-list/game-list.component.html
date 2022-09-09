@@ -1,0 +1,25 @@
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Tags</th>
+      <th>Launch Date</th>
+      <th>Rating</th>
+      <th>Price</th>
+      <th>Discount</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let game of games">
+      <td>{{ game.name }}</td>
+      <td>{{ game.description }}</td>
+      <td>{{ game.tags }}</td>
+      <td>{{ game.launchDate }}</td>
+      <td>{{ game.rating }}/5</td>
+      <td>{{ game.price }}$</td>
+      <td>{{ game.discount }}%</td>
+    </tr>
+  </tbody>
+</table>
